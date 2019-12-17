@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./component.css";
 import PropTypes from "prop-types";
 import SearchImage2 from "../Resources/images/search2.png";
-
+import "font-awesome/css/font-awesome.min.css"
+// import SearchIcon from "";
 /**
  * search class
  */
@@ -48,15 +49,12 @@ class SearchComponent extends React.Component {
 		}
 		cssClassNames += cssClass;
 		return (
-			<div>
-				<link
-					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-					rel="stylesheet"
-				/>
-
+			<Fragment>
+				
 				{iconAlign === "left" ? (
 					<div id="button-holder-left">
-						<img src={SearchImage2} alt="search" />
+						<i class="fa fa-search" aria-hidden="true"></i>
+						{/* <img src={SearchImage2} alt="search" /> */}
 					</div>
 				) : (
 					""
@@ -74,12 +72,13 @@ class SearchComponent extends React.Component {
 
 				{iconAlign === "right" ? (
 					<div id="button-holder">
-						<img src={SearchImage2} alt="search" />
+						<i class="fa fa-search" aria-hidden="true"></i>
+						{/*  <img src={SearchImage2} alt="search" /> */}
 					</div>
 				) : (
 					""
 				)}
-			</div>
+			</Fragment>
 		);
 	}
 }

@@ -1,8 +1,11 @@
+#component-div{
+  display: flex;
+  width:100%;
+}
+
 #search-text-input{
     border-top:thin solid  #e5e5e5;
-    
     border-bottom:0;
-    
     box-shadow:1px 1px 1px 1px #e5e5e5;
     float:left;
     height:17px;
@@ -17,11 +20,13 @@
 .right-border-disabled{
   border-right:thin solid #ffffff;
   border-left:thin solid  #e5e5e5;
+  margin-right: -2px;
 }
  
 .left-border-disabled{
   border-left:none;
   border-right:thin solid  #e5e5e5;
+  margin-left: -2px;
 }
 
 #button-holder{

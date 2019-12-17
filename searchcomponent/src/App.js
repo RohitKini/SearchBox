@@ -10,15 +10,15 @@ function App() {
 	const classes = "fontAwesome";
 	return (
 		<div className="App">
-			<div className="main-content-div">
+			
 				<Dropdown
 					dataset={NameArray}
 					searchkey={searchIndex}
-					cssStyle={{ "font-family": "FontAwesome" }}
+					cssStyle={{ "font-family": "FontAwesome" , "width":"80%"}}
 					cssClass={classes}
 					iconAlign="right"
 				/>
-			</div>
+				
 		</div>
 	);
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import SearchComponent from "../SearchComponent/SearchComponent";
 
@@ -28,7 +28,7 @@ class Dropdown extends React.Component {
 		const { searchResult } = this.state;
 		const { cssStyle, dataset, searchkey, cssClass, iconAlign } = this.props;
 		return (
-			<div>
+				<Fragment>
 				<SearchComponent
 					dataset={dataset}
 					searchkey={searchkey}
@@ -45,7 +45,7 @@ class Dropdown extends React.Component {
 						</option>
 					))}
 				</datalist>
-			</div>
+				</Fragment>		
 		);
 	}
 }
